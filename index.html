@@ -1,17 +1,29 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-    <meta charset="utf-8" /> 
-    <title>BiwaScheme example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="lib/main.css">
+    <title>Markov Chain Chatbot</title>
   </head>
   <body>
-    <div id="bs-console">
-    </div>
-    <script src="lib/biwascheme.js"></script>
-    <script type="text/biwascheme">
-      (print "Hello, world!")
-      (print (current-date))
-      (console-log "ok.")
+    <main id="app">
+      <div id="message-log">
+	<div class="message">
+	  <div class="message-author">Server</div>
+	  <p class="message-content">Loading markov matrix chatbot...</p>
+	</div>
+      </div>
+      <textarea id="input">Type something and press "Send"</textarea>
+      <button id="send">Send</button>
+    </main>
+    <script>
+      function random_integer (x)
+      {
+	  return Math.floor(Math.random() * x)
+      }
+    </script>
+    <script src="lib/biwascheme.js">
+      (load "src/index.scm")
     </script>
   </body>
 </html>

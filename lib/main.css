@@ -1,0 +1,9 @@
+main { max-width: 600px; margin-bottom: 5vh; }
+#input { width: 100% }
+#send { width: 100% }
+#app { height: 100vh  }
+#message-log { overflow: auto; height: 80% }
+
+.message-author { display: inline-block; }
+.message-author:after { content: ":" }
+.message-content { display: inline-block; width: 80% }

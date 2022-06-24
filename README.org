@@ -1,0 +1,20 @@
+#+title: markov chain chatbot in biwascheme
+#+author: theblacksquid
+
+* What is this?
+
+This is a front-end for the training models or "images" using the code
+on [[https://github.com/theblacksquid/guile-markov][this respository]].
+
+* How to run
+
+Ensure that you have python3 installed on your system and do the
+following:
+
+#+begin_src bash
+  chmod +x server.sh
+  ./server.sh
+#+end_src
+
+And then go to the localhost URL that will be displayed on your
+terminal
